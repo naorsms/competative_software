@@ -19,7 +19,6 @@ for name in range(len(dic)):
     answer[names[name]] = ' '
     for j in range(leng):
         if x[j] < j +1:
-            print(names[name],"kfirr")
             answer[names[name]] = j
             break
     if answer[names[name]] == ' ':
