@@ -9,6 +9,7 @@
 
 
 def xor(a, b):
+    a = a-1
     if a % 4 == 0:
         a = a
     elif a % 4 == 1:
@@ -50,9 +51,7 @@ for N in range(N):
 
     inner_square = 0
     for i in range(height_start,height_end +1):
-        x = n + width_start-1 + (i-1)*l
-        y = n + width_end -1 + (i-1)*l
-        inner_square ^= xor(n + width_start-2 + (i-1)*l,n + width_end -1 + (i-1)*l)
+        inner_square ^= xor(n + width_start-1 + (i-1)*l,n + width_end -1 + (i-1)*l)
 
-    whole_square = xor(l*h + n -1,n-1)
+    whole_square = xor(n,l*h + n -1)
     print(whole_square^inner_square)
