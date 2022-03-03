@@ -23,8 +23,7 @@ AAAA-0000-ABAB
 יוצרים dictionary
 רצים על לולאה באורך N על כל מחרוזת
 מסירים את כל המכפים מהמחרוזת
-רצים בעוד לולאה באורך של המחרוזת ובכל סיבוב משנים תו אחד לפי הסדר במחרוזת ובודקים אם כבר יש כזאת מחרוזת בdictionary שיצרנו אם כן תוסיף את המחרוזת כkey 
-והvalue יהיה 0.
+רצים בעוד לולאה באורך של המחרוזת ובכל סיבוב משנים תו אחד לפי הסדר במחרוזת (לדוגמא,משנים את התו ל-*).
 ```
 for n in range(string_num):
     coupon = input().replace('-', '')
@@ -35,7 +34,7 @@ for n in range(string_num):
         else:
             dic[string] = 1
 ```
-אם המחרוזת כן קיימת אז הkey תהיה המחרוזת והvalue יהיה 1 + כמות הפעמים שהמחרוזת כבר הופיע. דוגמא ללולאה אחרי 3 וחצי מחרוזות של הדוגמא מלמעלה:
+בודקים אם המחרוזת קיימת, אם כן אז הkey יהיה המחרוזת והvalue יהיה 1 + כמות הפעמים שהמחרוזת כבר הופיע אם לא אז הvalue יהיה שווה ל-1. דוגמא ללולאה אחרי 3 וחצי מחרוזות של הדוגמא מלמעלה:
 ```
 {'*ELCOMETOTHE': 1, 'W*LCOMETOTHE': 1, 'WE*COMETOTHE': 1, 'WEL*OMETOTHE': 1, 'WELC*METOTHE': 1, 'WELCO*ETOTHE': 1, 'WELCOM*TOTHE': 1, 'WELCOME*OTHE': 1, 'WELCOMET*THE': 1,
 'WELCOMETO*HE': 1, 'WELCOMETOT*E': 1, 'WELCOMETOTH*': 1,'*EEEXTREME14': 1, 'I*EEXTREME14': 1, 'IE*EXTREME14': 1, 'IEE*XTREME14': 1, 'IEEE*TREME14': 1, 'IEEEX*REME14': 1,
