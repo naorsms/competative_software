@@ -15,10 +15,7 @@ if black_pile%10 == 0:
 else:
     sum += black * (int(black_pile/10)+1)
 if pink_pile % 10 == 0:
-    sum += pink * pink_pile / 10
+    sum += int(pink * pink_pile / 10)
 else:
     sum += pink * (int(pink_pile / 10) + 1)
-if sum-int(sum) == 0:
-    print(int(sum))
-else:
-    print(sum)
+print(int(sum))
