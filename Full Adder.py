@@ -9,10 +9,10 @@ nums = {}
 for i in range(base):
     nums[num[i]] = i
 nums[" "] = 0
-sum = 0
 sumall = ""
 flag = 0
 for i in range(len(print1)-1,0,-1):
+    sum = 0
     sum += nums[print1[i]]+nums[print2[i]] + flag
     if sum >= base:
         flag = 1
@@ -20,7 +20,6 @@ for i in range(len(print1)-1,0,-1):
     else:
         flag = 0
     sumall += num[sum]
-    sum = 0
 print(data)
 print(print1)
 print(print2)
