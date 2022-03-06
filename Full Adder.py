@@ -16,7 +16,7 @@ for i in range(len(print1)-1,0,-1):
     sum += nums[print1[i]]+nums[print2[i]] + flag
     if sum >= base:
         flag = 1
-        sum = sum%base
+        sum = sum-base
     else:
         flag = 0
     sumall += num[sum]
