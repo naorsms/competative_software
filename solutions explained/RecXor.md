@@ -67,4 +67,4 @@ whole_square = xor(n,l*h + n -1)
 
     whole_square = xor(n,l*h + n -1)
     print(whole_square^inner_square)
-    ```
+```
