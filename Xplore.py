@@ -14,12 +14,12 @@ answer = {}
 for name in range(len(dic)):
     x = sorted(dic[names[name]],reverse=True)
     leng  = len(x)
-    answer[names[name]] = ' '
+    answer[names[name]] = -1
     for j in range(leng):
         if x[j] < j +1:
             answer[names[name]] = j
             break
-    if answer[names[name]] == ' ':
+    if answer[names[name]] == -1:
         answer[names[name]] = j + 1
 answersort = sorted(answer.items(), key=lambda x:(-x[1],x[0]))
 le = len(answersort)
