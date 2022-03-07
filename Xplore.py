@@ -11,16 +11,16 @@ for index in range(n):
         else:
             dic[author['full_name']].append(data['citing_paper_count'])
 answer = {}
-for name in range(len(dic)):
-    x = sorted(dic[names[name]],reverse=True)
+for name in names:
+    x = sorted(dic[name],reverse=True)
     leng  = len(x)
-    answer[names[name]] = -1
+    answer[name] = -1
     for j in range(leng):
         if x[j] < j +1:
-            answer[names[name]] = j
+            answer[name] = j
             break
-    if answer[names[name]] == -1:
-        answer[names[name]] = j + 1
+    if answer[name] == -1:
+        answer[name] = j + 1
 answersort = sorted(answer.items(), key=lambda x:(-x[1],x[0]))
 le = len(answersort)
 for i in range(le):
