@@ -20,7 +20,7 @@ for name in names:
             answer[name] = j
             break
     if answer[name] == -1:
-        answer[name] = j + 1
+        answer[name] = leng
 answersort = sorted(answer.items(), key=lambda x:(-x[1],x[0]))
 le = len(answersort)
 for i in range(le):
