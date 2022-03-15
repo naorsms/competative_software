@@ -6,6 +6,7 @@ for i in range(T):
     k = 0
 
     for q in range(2, m + 1):
+        print("k: ",k,"pk: ",P[k],"pq: ",P[q-1],"ak: ",a[k-1])
         while k > 0 and P[k] != P[q - 1]:
             k = a[k - 1]
         if P[k] == P[q - 1]:
