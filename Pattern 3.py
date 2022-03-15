@@ -1,4 +1,5 @@
 T = int(input())
+"kfir"
 for i in range(T):
     P = input()
     m = len(P)
