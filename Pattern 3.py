@@ -1,17 +1,12 @@
 T = int(input())
-"kfir"
 for i in range(T):
     P = input()
-    m = len(P)
-    a = [0] * m
+    a = [0] *len(P)
     k = 0
-
-    for q in range(2, m + 1):
-        print("k: ",k,"pk: ",P[k],"pq: ",P[q-1],"ak: ",a[k-1])
-        while k > 0 and P[k] != P[q - 1]:
+    for q in range(1, len(P)):
+        while k > 0 and P[k] != P[q]:
             k = a[k - 1]
-        if P[k] == P[q - 1]:
+        if P[k] == P[q]:
             k += 1
-        a[q - 1] = k
-
-    print(m - a[m-1])
+        a[q] = k
+    print(len(a) - a[-1])
