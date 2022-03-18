@@ -9,6 +9,7 @@ for n in range(string_num):
             dic[string] += 1
         else:
             dic[string] = 1
+        print(dic)
 Sum = 0
 for index in dic:
     appearances = dic[index]
