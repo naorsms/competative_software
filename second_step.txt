@@ -1,0 +1,8 @@
+Docker file.
+
+1) Create dockerfile with the services from the first step.
+2) All of the services and nginx configuration files should be in the image after "docker build".
+   This means if you need nginx.conf or selfsigned.crt files for the service to run COPY them into the correct location.
+
+You can have some inspiration from here:
+https://medium.com/@abdhesh_7570/how-to-setup-nginx-server-on-ubuntu-18-04-dockerfile-ecde2f4a3029

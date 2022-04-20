@@ -1,0 +1,13 @@
+Simple web server.
+
+Architecture:
+ 1) Nginx as the front server.
+ 2) Gunicorn+Flask- 2 threads as a backend service. Serving "hello world app"
+
+You can find an example here:
+https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04
+
+Bonuses:
+ 1*) HTTPS with 80 traffic redirect to 443.
+ 2*) Using socket file as a communication channel to the Gunicorn (More info here: https://docs.gunicorn.org/en/stable/deploy.html)
+

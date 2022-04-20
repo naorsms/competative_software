@@ -1,0 +1,18 @@
+
+Hello, we are going to implement a real life (but simple) web service.
+
+(Preparation) First step (first_step.txt):
+    Create the service and make sure you understand its components.
+
+(Preparation) Second step (second_step.txt):
+    Containerize the server. Create a dockerfile to hold all the components from the first step.
+
+(Main) Third step (third_step.txt):
+    This is the main part!
+    (1) Your Dockerfile may be not correct - it might be not finished.
+    (2) Even your service from the steps above allowed to be down - 404 is fine.
+
+    This is the main part!
+    (1) It must be implemented.
+
+    Dockerfile generator. Please see details in the third_step.txt
